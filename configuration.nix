@@ -277,7 +277,7 @@
       ignorecase = true;
       smartcase = true;
       incsearch = true;
-      hlsearch = false;
+      hlsearch = true;
       wildmode = "longest:full,full";
 
       # save settings
