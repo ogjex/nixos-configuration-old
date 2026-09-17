@@ -240,8 +240,8 @@
     defaultEditor = true;
 
 #    colorschemes.desert.enable = true;
-    viAlias = true;
-    vimAlias = true;
+#    viAlias = true;
+#    vimAlias = true;
     globals.mapleader = " ";
     opts = {
 
