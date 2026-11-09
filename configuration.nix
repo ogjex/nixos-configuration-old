@@ -151,6 +151,7 @@
     # development stuff
     git
     git-crypt
+    unzip
     gnupg
     sops
     age
@@ -218,6 +219,7 @@
     # work related-apps 
 #    citrix_workspace
     libreoffice
+    pandoc
     pdftk
     plantuml
     drawio
