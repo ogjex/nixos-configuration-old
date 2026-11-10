@@ -160,7 +160,12 @@
     gnumake
     fnm
     go
+    jq
     yq #yaml, toml, xml processor
+    act
+    actionlint
+    shellcheck
+    pre-commit
     # wayland desktop stuff
     swayidle
     swayosd
