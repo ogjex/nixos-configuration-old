@@ -26,6 +26,9 @@
 		checks.${system}.default = nixvim.lib.${system}.check.mkTestDerivationFromNvim {
 		inherit nvim;
 		name = "A nixvim configuration";
+      devShells.${system}.default = pkgs.mkShell {
+        packages = [ pkgs.pre-commit pkgs.python3 ];
+      };
 		};
  	
 		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
