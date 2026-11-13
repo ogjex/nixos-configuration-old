@@ -34,6 +34,7 @@
 	# hit any key to open bootloader
 	loader.timeout = 0;
   };
+  boot.kernel.sysctl."vm.max_map_count" = 524288;
 	
   # Bootloader.
   boot.loader.systemd-boot.consoleMode = "max";
@@ -185,6 +186,7 @@
     wl-clip-persist
     cliphist
     wlsunset
+    kooha # screen recorder
     # sound and display controls
     brightnessctl
     pamixer
@@ -524,6 +526,9 @@ services.tlp = {
 	};
 };
   services.power-profiles-daemon.enable = false;	
+
+  # networking 
+  networking.hosts."127.0.0.1" = [ "forgejo" "dt" "sonar" ];
 
    # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
