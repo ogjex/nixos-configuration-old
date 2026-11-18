@@ -180,6 +180,7 @@
     sox
     wmenu
     waybar
+    xdg-user-dirs
     xdg-desktop-portal-wlr
     wev
     wl-clipboard
@@ -528,7 +529,7 @@ services.tlp = {
   services.power-profiles-daemon.enable = false;	
 
   # networking 
-  networking.hosts."127.0.0.1" = [ "forgejo" "dt" "sonar" ];
+  networking.hosts."127.0.0.1" = [ "forgejo" "dt" "sonar" "defectdojo" ];
 
    # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
