@@ -132,6 +132,7 @@
     libtelnet
     sshpass
     iperf3
+    tcpdump
     # config management
     chezmoi
     # container stuff
